@@ -1,6 +1,12 @@
 import Atropos from "atropos/react";
 import "atropos/atropos.css";
 import "./styles.css";
+import layer0 from "./assets/layer0.svg";
+import layer1 from "./assets/layer1.svg";
+import layer2 from "./assets/layer2.svg";
+import layer3 from "./assets/layer3.svg";
+import layer4 from "./assets/layer4.svg";
+import layer5 from "./assets/layer5.svg";
 
 const HarvImage = () => {
   return (
@@ -10,7 +16,9 @@ const HarvImage = () => {
         highlight={false}
         onEnter={() => console.log("enter")}
       >
-        <img
+        <img className="atropos-banner-spacer" src={layer0} alt="layer" />
+        <img data-atropos-offset="-4.5" src={layer0} alt="layer" />
+        {/* <img
           className="atropos-banner-spacer"
           src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-bg.svg"
           alt="layer1"
@@ -19,32 +27,12 @@ const HarvImage = () => {
           data-atropos-offset="-4.5"
           src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-bg.svg"
           alt=""
-        />
-        <img
-          data-atropos-offset="-2.5"
-          src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-mountains.svg"
-          alt=""
-        />
-        <img
-          data-atropos-offset="0"
-          src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-forest-back.svg"
-          alt=""
-        />
-        <img
-          data-atropos-offset="2"
-          src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-forest-mid.svg"
-          alt=""
-        />
-        <img
-          data-atropos-offset="4"
-          src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-forest-front.svg"
-          alt=""
-        />
-        <img
-          data-atropos-offset="5"
-          src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-logo-en.svg"
-          alt=""
-        />
+        /> */}
+        <img data-atropos-offset="-2.5" src={layer1} alt="" />
+        <img data-atropos-offset="0" src={layer2} alt="" />
+        <img data-atropos-offset="2" src={layer3} alt="" />
+        <img data-atropos-offset="4" src={layer4} alt="" />
+        <img data-atropos-offset="5" src={layer5} alt="" />
       </Atropos>
     </div>
   );
